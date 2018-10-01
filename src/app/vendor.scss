@@ -1,0 +1,13 @@
+/* ------------- Bootstrap Overwrite -------- */
+.my-navbar {
+	border-radius: 0px !important;
+}
+
+.btn-primary {
+	background-image: none;
+}
+
+.navbar-brand>img.logo {
+	max-height: 25px;
+	width: auto;
+}
