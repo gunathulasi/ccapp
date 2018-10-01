@@ -8,11 +8,11 @@ var $ = require('gulp-load-plugins')({
 
 gulp.task('styles', ['wiredep', 'injector:css:preprocessor'], function () {
   return gulp.src(['src/app/index.scss', 'src/app/vendor.scss'])
-    .pipe($.sass({style: 'expanded'}))
-    .on('error', function handleError(err) {
-      console.error(err.toString());
-      this.emit('end');
-    })
+    // .pipe($.sass({style: 'expanded'}))
+    // .on('error', function handleError(err) {
+    //   console.error(err.toString());
+    //   this.emit('end');
+    // })
     .pipe($.autoprefixer('last 1 version'))
     .pipe(gulp.dest('.tmp/app/'));
 });
